@@ -63,8 +63,8 @@
             this.BtnRadio = new System.Windows.Forms.Button();
             this.BtnArrays = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BtnMethod = new System.Windows.Forms.Button();
             this.BtnClass = new System.Windows.Forms.Button();
+            this.BtnMethod = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.BoxLogin.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -376,6 +376,7 @@
             this.BtnPicture2.TabIndex = 3;
             this.BtnPicture2.Text = "PictureBox2";
             this.BtnPicture2.UseVisualStyleBackColor = true;
+            this.BtnPicture2.Click += new System.EventHandler(this.BtnPicture2_Click);
             // 
             // BtnSelfie
             // 
@@ -463,16 +464,6 @@
             this.groupBox2.Text = "Objrct Oriented";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // BtnMethod
-            // 
-            this.BtnMethod.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.BtnMethod.Location = new System.Drawing.Point(12, 22);
-            this.BtnMethod.Name = "BtnMethod";
-            this.BtnMethod.Size = new System.Drawing.Size(114, 26);
-            this.BtnMethod.TabIndex = 8;
-            this.BtnMethod.Text = "Methods";
-            this.BtnMethod.UseVisualStyleBackColor = true;
-            // 
             // BtnClass
             // 
             this.BtnClass.ForeColor = System.Drawing.Color.MidnightBlue;
@@ -482,6 +473,16 @@
             this.BtnClass.TabIndex = 9;
             this.BtnClass.Text = "Classes";
             this.BtnClass.UseVisualStyleBackColor = true;
+            // 
+            // BtnMethod
+            // 
+            this.BtnMethod.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.BtnMethod.Location = new System.Drawing.Point(12, 22);
+            this.BtnMethod.Name = "BtnMethod";
+            this.BtnMethod.Size = new System.Drawing.Size(114, 26);
+            this.BtnMethod.TabIndex = 8;
+            this.BtnMethod.Text = "Methods";
+            this.BtnMethod.UseVisualStyleBackColor = true;
             // 
             // button2
             // 

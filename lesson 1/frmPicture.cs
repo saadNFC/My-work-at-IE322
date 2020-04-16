@@ -19,9 +19,20 @@ namespace lesson_1
 
         private void BtnImagrFile_Click(object sender, EventArgs e)
         {
-            picleft.Image = Image.FromFile("C:\\Users\\saadc\\Desktop\\IE322 عاطف\\www.jpeg");
+            picleft.Image = Image.FromFile("C:\\Users\\saadc\\Desktop\\IE322 عاطف\\saeed2.jpg");
 
+            
             MessageBox.Show("Image file not found!");
+        }
+
+        private void picleft_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            picright.Image = Image.FromFile("C:\\Users\\saadc\\Desktop\\IE322 عاطف\\Saeed.jpg");
         }
     }
 }

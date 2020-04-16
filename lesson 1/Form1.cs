@@ -24,7 +24,7 @@ namespace lesson_1
             
             InitializeComponent();
         }
-
+      
         private void groupBox4_Enter(object sender, EventArgs e)
         {
 
@@ -50,6 +50,7 @@ namespace lesson_1
                 }
                  else if (TextUse.Text != username) 
                 {
+
                     MessageBox.Show("incorrect username ");
                 }
                  else
@@ -137,7 +138,13 @@ namespace lesson_1
 
         private void BtnCom_Click_1(object sender, EventArgs e)
         {
-            
+            frmCoboRandom frm = new frmCoboRandom();
+            frm.ShowDialog();
+        }
+
+        private void BtnPicture2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

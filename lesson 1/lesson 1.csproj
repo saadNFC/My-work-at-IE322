@@ -89,6 +89,12 @@
     <Compile Include="frmPicture.Designer.cs">
       <DependentUpon>frmPicture.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPicture2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPicture2.Designer.cs">
+      <DependentUpon>frmPicture2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRadio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPicture.resx">
       <DependentUpon>frmPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPicture2.resx">
+      <DependentUpon>frmPicture2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRadio.resx">
       <DependentUpon>frmRadio.cs</DependentUpon>

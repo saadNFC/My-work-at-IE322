@@ -20,13 +20,77 @@ namespace lesson_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int r = y.Next(0, 255);
-            int g = y.Next(0, 255);
-            int b = y.Next(0, 255);
+            cmbRandom1.ResetText();      
+            cmbRandom1.Items.Clear();    
+            Random r = new Random();
+            for (int i = 0; i < r.Next(1, 51); i++)
+            {
+                cmbRandom1.Items.Add(r.Next(100, 999));
+            }
+        }
 
-            
-            button1.BackColor = Color.FromArgb(r, g, b);
-            this.BackColor = Color.FromArgb(255 - r, 255 - g, 255 - b);
+        private void button4_Click(object sender, EventArgs e)
+        {
+            cmbRandom2.ResetText();
+            cmbRandom2.Items.Clear();
+            Random r = new Random();
+            for (int i = 0; i < r.Next(2, 9) - 1; i++)
+            {
+                cmbRandom2.Items.Add(r.Next(10, 99));
+            }
+            label1.Text = Convert.ToString(cmbRandom2.Items.Count);
+        }
+
+        private void RadioLess1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnReset1_Click(object sender, EventArgs e)
+        {
+            cmbRandom1.ResetText();
+            cmbRandom1.Items.Clear();
+            RadioLess1.Checked = false;
+            RadioGreater2.Checked = false;
+        }
+
+        private void cmbRandom1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(cmbRandom1.Text) > 499)
+            {
+                RadioGreater2.Checked = true;
+            }
+            else
+            {
+                RadioLess1.Checked = true;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = System.Windows.Forms.DialogResult.OK;
+        }
+
+        private void cmbRandom2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(cmbRandom2.Text) > 49)
+            {
+                RadioGreater2.Checked = true;
+            }
+            else
+            {
+                RadioLess2.Checked = true;
+            }
+        }
+
+        private void BtnReset2_Click(object sender, EventArgs e)
+        {
+            cmbRandom2.ResetText();
+            cmbRandom2.Items.Clear();
+            RadioLess2.Checked = false;
+            RadioGreater2.Checked = false;
+            label1.Text = Convert.ToString(cmbRandom2.Items.Count);
+
         }
     }
 }
